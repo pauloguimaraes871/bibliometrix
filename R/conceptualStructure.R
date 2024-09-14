@@ -232,7 +232,7 @@ conceptualStructure<-function(M,field="ID", ngrams=1, method="MCA", quali.supp=N
                      colour = color),
                  alpha = 0.3,
                  show.legend = FALSE) +
-    ggrepel::geom_text_repel(aes(label=label)) +
+    ggrepel::geom_text_repel(aes(label=label), size = size) +
     theme_minimal()+
     labs(title= paste("Conceptual Structure Map - method: ",method,collapse="",sep="")) +
     geom_hline(yintercept=0, linetype="dashed", color = adjustcolor("grey40",alpha.f = 0.7))+
